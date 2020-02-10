@@ -7,8 +7,30 @@
     <script src="/js/vue.js"></script>
 </head>
 <body>
+    <div id="root">
+        <!-- one-way data binding -->
+        <h2>{{message}}</h2>
+
+        <input type="text" v-model="message">
+        <br><br>
+        Sign Up
+        <br><br>
+        <input type="text" v-model="email">
+        <br>
+        <button onclick="alert('Signed Up')" v-bind:disabled="email.length < 2" >Submit</button>    
+    </div>
     
 
-    
+  <!--Instantiating vue library  -->
+  <script>
+      new Vue({
+          //vue object
+          el: '#root',
+          data: {
+              message: 'You are running Vue in development mode.',
+              email: ''
+          }
+      })
+  </script>
 </body>
 </html>

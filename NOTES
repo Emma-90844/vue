@@ -1,0 +1,47 @@
+NOTE:That anything with a v- is aVIEW DIRECTIVE.
+
+Directives are special attributes with a v-prefix.
+A diective job is to reactively apply side effects 
+to the DOM when the value of its expression changes
+
+
+<input type="text" v-model="message">
+What this means is , In what ever tag you place the 
+v- in means bind it in the variable passed in.
+
+
+
+ <div v-else-if="count === 1">
+    Green Wich  
+</div>
+
+ <div v-else="count ===1">
+    Orange
+</div>
+
+
+
+
+
+ANATHER DIRECTIVE:  V-SHOW
+
+<div id="root">
+    <div v-show="count === 1">
+        green
+    </div>
+</div>
+
+
+    VUE MODEL:
+What v model does is creating a two way data binding between the 
+user input and vuejs component.
+
+v model craetes a two way data binding between the user input and
+ vue component
+
+
+
+
+
+
+
