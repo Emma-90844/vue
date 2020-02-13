@@ -32,13 +32,24 @@ ANATHER DIRECTIVE:  V-SHOW
 </div>
 
 
-    VUE MODEL:
+    V-MODEL:
 What v model does is creating a two way data binding between the 
 user input and vuejs component.
 
 v model craetes a two way data binding between the user input and
  vue component
 
+    V-BIND:
+v-bind:class="red"
+v-bind:class="  " // can be written simply with the the semi colons(:);
+        example:.............:class="red"
+
+Anather use for v-bind is to dynamically add classes
+E.g <input type="text" v-model="email" v-bind:class="{red: email.length < 2}">
+
+
+   V-FOR:
+This is a directive for handling loops
 
 
 
